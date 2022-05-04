@@ -4,10 +4,15 @@
 const nameList = ["Marco","Luca", "Giovanni", "Paolo", "Nicola"];
 const surnameList = ["Rossi", "Bianchi", "Verdi", "Pinco", "Pallino"];
 
-for ( let i; i < nameList.length; i++ ){
+const randomList = []
 
+for ( let i = 0; i < 5; i++ ){
+    const indexNameRandom = Math.floor(Math.random() * nameList.length);
+    const indexSurnameRandom = Math.floor(Math.random() * surnameList.length);
+    randomList.push(`${nameList[indexNameRandom]} ${surnameList[indexSurnameRandom]}`);
 }
 
+console.log(randomList)
 
 
 
